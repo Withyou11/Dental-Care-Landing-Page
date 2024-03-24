@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dental Care Landing Page</title>
 
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
@@ -155,11 +158,18 @@
           <!-- Hero media -->
           <div class="hero__media">
             <figure class="hero__images">
-              <img src="./assets/img/hero-1.jpg" alt="" class="hero__img" />
+              <img
+                src="./assets/img/hero-1.jpg"
+                alt=""
+                class="hero__img"
+                data-aos="fade-right"
+              />
               <img
                 src="./assets/img/hero-2.jpg"
                 alt=""
                 class="hero__img hero__img--small"
+                data-aos="fade-left"
+                data-aos-delay="1000"
               />
             </figure>
           </div>
@@ -180,7 +190,12 @@
 
           <div class="section__row">
             <figure class="service__image">
-              <img src="./assets/img/service.jpg" alt="" class="service__img" />
+              <img
+                src="./assets/img/service.jpg"
+                alt=""
+                class="service__img"
+                data-aos="zoom-in"
+              />
             </figure>
             <div class="section__col">
               <div class="service__list">
@@ -294,11 +309,13 @@
                   src="./assets/img/about-1.jpg"
                   alt=""
                   class="feature__img"
+                  data-aos="fade-down-right"
                 />
                 <img
                   src="./assets/img/about-2.jpg"
                   alt=""
                   class="feature__img"
+                  data-aos="fade-up-left"
                 />
               </figure>
             </div>
@@ -607,5 +624,11 @@
         </p>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+      });
+    </script>
   </body>
 </html>
